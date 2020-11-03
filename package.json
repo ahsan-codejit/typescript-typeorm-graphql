@@ -1,0 +1,41 @@
+{
+  "name": "typescript-typeorm-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahsan-codejit/typescript-typeorm-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahsan-codejit/typescript-typeorm-graphql/issues"
+  },
+  "homepage": "https://github.com/ahsan-codejit/typescript-typeorm-graphql#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.19.0",
+    "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.0",
+    "type-graphql": "^1.1.0",
+    "typeorm": "^0.2.29",
+    "typeorm-encrypted": "^0.5.6"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/nodemon": "^1.19.0",
+    "eslint": "^7.12.1",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

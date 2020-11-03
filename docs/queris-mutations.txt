@@ -1,0 +1,54 @@
+# Write your query or mutation here
+query{
+    users{
+        id
+        firstName
+        lastName
+    }
+}
+
+query{
+    user(id: "1"){
+        id
+        firstName
+        lastName
+    }
+}
+
+mutation {
+    createUser(
+        data: {
+        firstName: "maximus"
+      lastName: "millian"
+      nickName: "max"
+      email: "a@a.com"
+      password: "test"
+    }
+    ) {
+        id
+        firstName
+        lastName
+        nickName
+        email
+        password
+    }
+}
+
+mutation {
+    updateUser(id: "1",
+        data: {
+        nickName: "max"
+      email: "test@a.com"
+    }
+    ) {
+        id
+        firstName
+        lastName
+        nickName
+        email
+        password
+    }
+}
+mutation{
+    deleteUser(id: "1")
+}
