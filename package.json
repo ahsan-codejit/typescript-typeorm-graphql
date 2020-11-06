@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "NODE_ENV=develop nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,7 +33,6 @@
     "typeorm-encrypted": "^0.5.6"
   },
   "devDependencies": {
-    "@types/dotenv": "^8.2.0",
     "@types/nodemon": "^1.19.0",
     "eslint": "^7.12.1",
     "nodemon": "^2.0.6",
